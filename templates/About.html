@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<script>
+function Home() {
+    window.open("http://127.0.0.1:5000","_self");
+}
+function Register() {
+    window.open("http://127.0.0.1:5000/register","_self");
+}
+function Blog() {
+    window.open("http://127.0.0.1:5000/blog","_self");
+}
+function Contact() {
+    window.open("http://127.0.0.1:5000/contact","_self");
+}
+function About() {
+    window.open("http://127.0.0.1:5000/about","_self");
+}
+</script>
+
+
+<head>
+
+<link href="{{ url_for('static', filename='MainPage.css') }}" type="text/css" rel="stylesheet"/>
+
+</body>
+
+<header>
+<div class="MainPageOnTop">
+<h1 id="MainTitle">HackTimes</h1>
+
+<nav>
+<ul>
+<li name="Home" onclick="Home()">Home</li>
+<li name="Register" onclick="Register()">Register</li>
+<li name="Blog" onclick="Blog()">Blog</li>
+<li name="Contact" onclick="Contact()">Contact</li>
+<li name="About" onclick="About()" style="background-color:khaki">About</li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+</body>
+
+
+</head>
+
+
+</html>

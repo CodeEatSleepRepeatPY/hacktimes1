@@ -1,0 +1,47 @@
+body{
+	background-color: #333;
+	margin:0;
+}
+
+#MainTitle{	
+	float:left;
+	color:white;
+}
+
+nav{
+	float:right;
+	margin-right: 13%;
+}
+
+h1{
+	margin-left:15%;
+}
+
+header{
+	background: #55d6aa;
+}
+
+header::after{
+	content:'';
+	display:table;
+	clear:both;
+}
+
+ul{
+	list-style-type:none;
+	background-color:#f1f1f1;
+	height:100%;
+}
+
+li{
+	display:inline;
+	font-size:30px;
+	color:black;
+	padding:8px 16px;
+	text-decoration:none;
+}
+
+li:hover{
+	background-color:#4CAF50;
+	cursor:pointer;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<script>
+function Home() {
+    window.open("http://127.0.0.1:5000","_self");
+}
+function Register() {
+    window.open("http://127.0.0.1:5000/register","_self");
+}
+function Blog() {
+    window.open("http://127.0.0.1:5000/blog","_self");
+}
+function Contact() {
+    window.open("http://127.0.0.1:5000/contact","_self");
+}
+function About() {
+    window.open("http://127.0.0.1:5000/about","_self");
+}
+</script>
+
+<head>
+
+<link href="{{ url_for('static', filename='MainPage.css') }}" type="text/css" rel="stylesheet"/>
+
+</body>
+
+<header>
+<div class="MainPageOnTop">
+<h1 id="MainTitle">HackTimes</h1>
+
+<nav>
+<ul>
+<li name="Home" onclick="Home()">Home</li>
+<li name="Register" onclick="Register()" style="background-color:khaki">Register</li>
+<li name="Blog" onclick="Blog()">Blog</li>
+<li name="Contact" onclick="Contact()">Contact</li>
+<li name="About" onclick="About()">About</li>
+</ul>
+</nav>
+
+</div>
+
+</header>
+
+<form method="POST">
+  <div class="imgcontainer">
+    <img src="{{url_for('static', filename='register.png')}}" style="width:700px;height:450px" />
+  </div>
+
+  <div class="container">
+    <label for="uname" style="color:#f1f1f1"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="username" name="username" required>
+
+    <label for="psw" style="color:#f1f1f1"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="password" name="password" required>
+        
+    <button type="submit">Register</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+<br>
+  <div class="container" style="background-color:#f1f1f1">
+    <span class="psw" style="color:white;background-color:black;">Dont forget your password ;)</span>
+  </div>
+</form>
+
+</body>
+
+
+</head>
+
+
+</html>
